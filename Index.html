@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <title>Beleza&Estilo - Salão de Beleza</title>
+</head>
+<body>
+  <nav class="nav">
+    <a href="./">
+      <h1 class="logo">
+        Beleza<span class="accent"> &</span> Estilo
+      </h1>
+    </a>
+    <ul id="menu" class="desktop">
+      
+      <li>
+        <a href="#services">Serviços</a>
+      </li>
+      <li>
+        <a href="#Depoimentos">Depoimentos</a>
+      </li>
+      <li>
+        <a href="#">Portfólio</a>
+      </li>
+     
+      <li>
+        <a href="#Contato">Contato</a>
+      </li>
+    </ul>
+    <button class="nav__menu-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <header>
+    <img class="header__background opacity" src="./galeria/pexels-cottonbro-3992866.jpg" alt="salão de beleza">
+    <div class="container container__header">
+      <h2>Sua beleza em destaque</h2>
+      <p>Venha experimentar nossos serviços de beleza e estilo em um ambiente acolhedor e relaxante.</p>
+    </div>
+  </header>
+  
+
+  <main>
+    <!-- SERVIÇOS -->
+    <section class="section" id="services">
+      <div class="container grid">
+        <header>
+          <h2 class="title">Serviços</h2>
+          <p class="subtitle">
+            Com mais de uma década de experiência, o <strong>Beleza & Estilo</strong> orgulha-se de sua trajetória marcada por excelência e dedicação. Ao longo dos anos, conquistamos uma clientela diversificada, proveniente de diferentes partes do mundo, graças aos nossos tratamentos exclusivos e compromisso com a qualidade. Estamos empenhados em oferecer uma experiência única, onde a beleza se encontra com o bem-estar, proporcionando não apenas transformações estéticas, mas também uma jornada de autoconfiança e empoderamento. Venha nos visitar e descubra como podemos realçar ainda mais sua beleza natural!
+          </p>
+        </header>
+        <div class="cards grid">
+          <div class="card">
+            <img src="./galeria/Terapiacapilar.png" alt="Ícone Terapia Capilar" class="icon">
+            <h3 class="title">Terapia Capilar</h3>
+            <p>
+              Descubra o segredo para cabelos saudáveis e radiantes com a nossa Terapia Capilar. Nossa abordagem exclusiva revitaliza o couro cabeludo, fortalece os fios e restaura o brilho perdido. Agende uma consulta hoje mesmo!
+            </p>
+          </div>
+          <div class="card">
+            <img src="./galeria/EstiloCorte.png" alt="Ícone Cortes" class="icon">
+            <h3 class="title">Cortes</h3>
+            <p>
+              Descubra o poder de um corte de cabelo impecável. Dos clássicos aos modernos, nossos cabeleireiros estão prontos para criar o visual perfeito que combina com você. Agende já o seu! 
+            </p>
+          </div>
+          <div class="card">
+            <img src="./galeria/Tratamentos.png" alt="Ícone Tratamentos" class="icon">
+            <h3 class="title">Tratamentos</h3>
+            <p>
+              Descubra nossos tratamentos exclusivos para cabelo e pele. Agende agora e renove sua beleza!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section" id="Depoimentos">
+      <div class="container">
+        <header>
+          <h2 class="title">Depoimentos</h2>
+        </header>
+        <div class="testimonials swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Estou muito satisfeita com o serviço prestado pelo Beleza & Estilo. Meu cabelo nunca esteve tão bonito e saudável!<span>&ldquo;</span>
+                </p>
+                
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/31.jpg" alt="Foto da Giovanna" />
+                  Elisa silva
+                </cite>
+              </blockquote>
+            </div>
+            <div class="swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Excelente atendimento! Os profissionais são muito dedicados e competentes. Recomendo a todos!
+                  <span>&ldquo;</span>
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Foto da Andressa" />
+                  Ana santos
+                </cite>
+              </blockquote>
+            </div>
+            <div class="swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Não poderia estar mais feliz com o resultado. O Beleza & Estilo transformou meu visual e elevou minha autoestima!
+                  <span>&ldquo;</span>
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="Fotos da Denize" />
+                  Fernada
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var mySwiper = new Swiper('.testimonials', {
+            loop: true, // Habilita o loop do carrossel
+            autoplay: {
+              delay: 5000, // Tempo de intervalo entre os slides (em milissegundos)
+            },
+            pagination: {
+              el: '.swiper-pagination', // Selector para a div da paginação
+              clickable: true, // Permite clicar na paginação para mudar de slide
+            },
+          });
+        });
+      </script>
+      
+    </section>
+
+  
+  </main>
+
+ 
+  <footer class="footer">
+    <div class="container footer__container">
+      <h2>
+        Beleza<span class="accent">&</span>Estilo
+      </h2>
+      <div class="footer__content" id="Contato">
+        <div class="footer__map">
+          <h3>Localização</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14671.053028003298!2d-45.87255346503555!3d-23.17883913924507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4bcc0d78521d%3A0xf0054cb5365ee210!2sVila%20Industrial%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1713898742938!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer__contact">
+          <h3>Contato</h3>
+          <p>Telefone: (xx) xxxx-7890</p>
+          <p>Email: contato@belezaestilo.com</p>
+          <p>Endereço: Av. Principal, 123 - Centro</p>
+        </div>
+      </div>
+    </div>
+    <hr class="footer__separator">
+    <p class="copyright">© 2024 Beleza&Estilo - Todos os direitos reservados</p>
+  </footer>
+  
+        
+      
+  
+
+</body>
+</html>
